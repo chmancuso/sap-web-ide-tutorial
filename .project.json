@@ -1,0 +1,23 @@
+{
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/EPM_REF_APPS_PO_APV_SRV/",
+    "loadCustomRequests": true,
+    "loadJSONFiles": true,
+    "metadataFilePath": "../localService/metadata.xml",
+    "mockRequestsFilePath": "../localService/MockRequests.js"
+  },
+  "generation": [
+    {
+      "templateId": "fiorireferenceapps.approvePurchaseOrder",
+      "templateVersion": "2.0.12",
+      "dateTimeStamp": "Mon, 20 Jun 2016 11:40:29 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
+}
