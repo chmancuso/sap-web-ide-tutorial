@@ -28,6 +28,7 @@
 				</Key>
 				<Property Name="POId" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Purchase Order ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="POItemPos" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Item Position" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			    <Property Name="ProductID" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Product ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="Price" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="2" sap:unit="PriceCurrency" sap:label="Price" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="PriceCurrency" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Currency Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>

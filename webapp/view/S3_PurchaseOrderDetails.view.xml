@@ -35,8 +35,14 @@
 				headerText="{path:'viewProperties>/itemListCount', formatter: '.formatter.itemListTitle' }"
 				updateFinished="onUpdateFinished" class="sapUiResponsiveMargin" width="auto"
 				items="{path: 'PurchaseOrderItems',
-						parameters: {select: 'POId,POItemPos,Product,Price,PriceCurrency,GrossAmount,GrossAmountCurrency,Quantity,DeliveryDate'}}">
+						parameters: {select: 'POId,POItemPos,Product,ProductID,Price,PriceCurrency,GrossAmount,GrossAmountCurrency,Quantity,DeliveryDate'}}">
 				<columns>
+					<!--Product ID-->
+					<Column id="idColumn" width="30%">
+						<header>
+							<Label id="idColumnLabel" text="{/#PurchaseOrderItem/ProductID/@sap:label}" visible="{= !${device>/system/phone} }" />
+						</header>
+					</Column>
 					<!--Product name-->
 					<Column id="nameColumn" width="30%">
 						<header>
@@ -70,6 +76,8 @@
 				</columns>
 				<ColumnListItem id="detailsListItem">
 					<cells>
+						<!--Product ID-->
+						<Text id="idCell" text="{ProductID}" class="sapMTableContentMargin" />
 						<!--Product name-->
 						<Text id="nameCell" text="{Product}" class="sapMTableContentMargin" />
 						<!--Delivery Date-->
