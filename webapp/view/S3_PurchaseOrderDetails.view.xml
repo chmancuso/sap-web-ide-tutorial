@@ -5,8 +5,7 @@
 			<!--Header information supplier name, total value with currency code, change date and requester of the selected purchase order -->
 			<ObjectHeader id="objectHeader"
 				title="{SupplierName}" responsive="true"
-				number="{path: 'GrossAmount', formatter: '.formatter.amountWithOutCurrency'}" numberUnit="{CurrencyCode}"
-				intro="{path:'OrderedByName', formatter: '.formatter.orderedBy'}">
+				number="{path: 'GrossAmount', formatter: '.formatter.amountWithOutCurrency'}" numberUnit="{CurrencyCode}">
 				<statuses>
 					<ObjectStatus id="changedAtStatus" text="{path: 'ChangedAt', formatter: '.formatter.daysAgo'}" />
 				</statuses>
